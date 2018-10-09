@@ -31,3 +31,6 @@ ZXing.Net.Mobile.Forms
 zxing.portable
 ZXingNetMobile
 netstandard
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms

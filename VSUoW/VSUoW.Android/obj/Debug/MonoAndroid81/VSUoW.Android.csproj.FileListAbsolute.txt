@@ -93,6 +93,7 @@ D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\res\drawable\enterun.jpg
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\res\drawable\olegq.jpg
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\res\drawable\alexeyq.jpg
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\res\drawable\bmpmap.bmp
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW\bin\Debug\netstandard2.0\VSUoW.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\linksrc\VSUoW.Android.pdb
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\bin\Debug\VSUoW.dll.mdb
