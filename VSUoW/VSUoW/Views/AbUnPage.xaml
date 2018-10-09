@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VSUoW.Views.AbUnPage"
+             Title="Об Университете">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="1">
+            <StackLayout Padding="10" Orientation="Vertical" >
+                    <Label Grid.Column="0" Text="Волжский государственный университет водного транспорта " FontSize="22" FontAttributes="Bold"
+                HorizontalTextAlignment="Center" />
+                    <StackLayout Padding="10,10,10,10">
+                        <Image Source="EnterUn"/>
+                    </StackLayout>
+                    <Label VerticalOptions="End" HorizontalTextAlignment="Start" Grid.Column="2" Text="Волжский государственный университет водного транспорта - высшее транспортное учебное заведение России. Она был учреждена постановлением Совета народных комиссаров и Совета труда и обороны СССР 11 сентября 1930 г. Однако официальной датой создания вуза считается 17 декабря 1930 года. В этот день в Нижегородском институте инженеров речного транспорта (так назывался тогда университет) начались занятия на четырех факультетах – эксплуатационном, механическом, судокорпусном и гидротехническом." FontSize="19"/>
+            </StackLayout>
+                </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
