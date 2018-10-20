@@ -57,6 +57,22 @@
           }
         }
       },
+      "SkiaSharp.Views/1.60.3": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.60.3"
+        },
+        "compile": {
+          "lib/net45/SkiaSharp.Views.Desktop.dll": {},
+          "lib/net45/SkiaSharp.Views.Gtk.dll": {},
+          "lib/net45/SkiaSharp.Views.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SkiaSharp.Views.Desktop.dll": {},
+          "lib/net45/SkiaSharp.Views.Gtk.dll": {},
+          "lib/net45/SkiaSharp.Views.WPF.dll": {}
+        }
+      },
       "SkiaSharp.Views.Forms/1.60.3": {
         "type": "package",
         "dependencies": {
@@ -303,6 +319,37 @@
         "xamarin.interactive/SkiaSharp.Workbooks.dll"
       ]
     },
+    "SkiaSharp.Views/1.60.3": {
+      "sha512": "t6e9/3Mssli5HfqsQBtwWyEod2VlJ0q6bAlYP98V1XQbtvAwQPF6Jqu/ZWoT2M10cu3dWwM7Pxqog7sSWKXlJw==",
+      "type": "package",
+      "path": "skiasharp.views/1.60.3",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.dll",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.xml",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.xml",
+        "lib/net45/SkiaSharp.Views.Desktop.dll",
+        "lib/net45/SkiaSharp.Views.Desktop.xml",
+        "lib/net45/SkiaSharp.Views.Gtk.dll",
+        "lib/net45/SkiaSharp.Views.Gtk.xml",
+        "lib/net45/SkiaSharp.Views.WPF.dll",
+        "lib/net45/SkiaSharp.Views.WPF.xml",
+        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "skiasharp.views.1.60.3.nupkg.sha512",
+        "skiasharp.views.nuspec"
+      ]
+    },
     "SkiaSharp.Views.Forms/1.60.3": {
       "sha512": "jPbNcPX8wYvfMRHDnmYzn4dcRvbbo5MC0yNTdfhTNOSHA53U/ItIezrWndQZJ4rhxfcKgvAGkesiDzlHCAyLRw==",
       "type": "package",
@@ -521,6 +568,8 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "SkiaSharp >= 1.60.3",
+      "SkiaSharp.Views >= 1.60.3",
       "SkiaSharp.Views.Forms >= 1.60.3",
       "Xamarin.Forms >= 3.1.0.697729",
       "ZXing.Net.Mobile.Forms >= 2.3.2"
@@ -573,6 +622,14 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[1.60.3, )"
+          },
+          "SkiaSharp.Views": {
+            "target": "Package",
+            "version": "[1.60.3, )"
+          },
           "SkiaSharp.Views.Forms": {
             "target": "Package",
             "version": "[1.60.3, )"
@@ -595,6 +652,16 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"SkiaSharp.Views 1.60.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETStandard,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "SkiaSharp.Views",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

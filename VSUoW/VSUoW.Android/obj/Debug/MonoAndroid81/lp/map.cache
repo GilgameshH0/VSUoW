@@ -1,5 +1,8 @@
 FastAndroidCamera
 FormsViewGroup
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms
 System.Runtime
 VSUoW
 Xamarin.Android.Arch.Core.Common
@@ -31,6 +34,3 @@ ZXing.Net.Mobile.Forms
 zxing.portable
 ZXingNetMobile
 netstandard
-SkiaSharp
-SkiaSharp.Views.Android
-SkiaSharp.Views.Forms

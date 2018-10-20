@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
+using System.Reflection;
+using SkiaSharp;
+using SkiaSharp.Views.Forms;
 
 namespace VSUoW.Views
 {

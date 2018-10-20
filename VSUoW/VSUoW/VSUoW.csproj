@@ -19,6 +19,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="bmpmap.bmp" />
+    <None Remove="MountainClimbers.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="bmpmap.bmp" />
+    <EmbeddedResource Include="MountainClimbers.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="1.60.3" />
+    <PackageReference Include="SkiaSharp.Views" Version="1.60.3" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.3" />
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.3.2" />  

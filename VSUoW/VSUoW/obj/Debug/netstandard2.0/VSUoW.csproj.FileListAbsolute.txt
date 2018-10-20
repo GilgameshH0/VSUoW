@@ -18,3 +18,4 @@ D:\ChanceToLive\VSUoW\VSUoW\VSUoW\obj\Debug\netstandard2.0\VSUoW.AssemblyInfo.cs
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW\obj\Debug\netstandard2.0\VSUoW.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW\obj\Debug\netstandard2.0\VSUoW.pdb
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW\obj\Debug\netstandard2.0\VSUoW.csprojAssemblyReference.cache
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW\obj\Debug\netstandard2.0\XamlC.stamp

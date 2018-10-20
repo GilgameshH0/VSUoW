@@ -4,6 +4,9 @@ D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\Java.Interop.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Android.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\mscorlib.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\SkiaSharp.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\SkiaSharp.Views.Android.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\SkiaSharp.Views.Forms.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\System.Core.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\System.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.dll

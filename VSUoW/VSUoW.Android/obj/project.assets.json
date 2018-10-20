@@ -443,6 +443,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "SkiaSharp": "1.60.3",
+          "SkiaSharp.Views": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",
           "Xamarin.Forms": "3.1.0.697729",
           "ZXing.Net.Mobile.Forms": "2.3.2"
@@ -1026,6 +1028,8 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "SkiaSharp >= 1.60.3",
+      "SkiaSharp.Views >= 1.60.3",
       "SkiaSharp.Views.Forms >= 1.60.3",
       "VSUoW >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
@@ -1074,6 +1078,14 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[1.60.3, )"
+          },
+          "SkiaSharp.Views": {
+            "target": "Package",
+            "version": "[1.60.3, )"
+          },
           "SkiaSharp.Views.Forms": {
             "target": "Package",
             "version": "[1.60.3, )"
