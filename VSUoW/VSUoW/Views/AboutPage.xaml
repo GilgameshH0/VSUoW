@@ -6,7 +6,7 @@
              Title="О приложении">
     
     <ContentPage.BindingContext>
-        <vm:AboutViewModel />
+        
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>

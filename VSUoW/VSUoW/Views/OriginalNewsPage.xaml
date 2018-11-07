@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VSUoW.Views.OriginalNewsPage"
+             Title="Новости ВГУВТа">
+    <AbsoluteLayout>
+        <!--<Grid Padding="0,0,0,0" AnchorX="0" AnchorY="0">
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+
+
+
+
+            <StackLayout Grid.Column="0" Grid.Row="0" >
+                <Image x:Name="uri1"/>
+
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="1"  >
+                <Image x:Name="uri2"   />
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Grid.Row="0" >
+
+                <Label x:Name="label1" FontAttributes="Bold" FontSize="14"/>
+                <Label x:Name="label2" FontSize="13"/>
+            </StackLayout>
+            <StackLayout Grid.Column="1" Grid.Row="1" >
+                <Label x:Name="label3"  FontAttributes="Bold" FontSize="14"/>
+                <Label x:Name="label4" FontSize="13"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="0" Grid.Row="2" >
+                <Image x:Name="uri3"    />
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="3" >
+                <Image x:Name="uri4"  />
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" Grid.Row="2" >
+                <Label x:Name="label5" FontAttributes="Bold" />
+                <Label x:Name="label6"  />
+            </StackLayout>
+            <StackLayout Grid.Column="1" Grid.Row="3" >
+                <Label x:Name="label7" FontAttributes="Bold" />
+                <Label x:Name="label8" />
+            </StackLayout>
+
+            
+
+            
+        </Grid>-->
+    </AbsoluteLayout>
+
+</ContentPage>

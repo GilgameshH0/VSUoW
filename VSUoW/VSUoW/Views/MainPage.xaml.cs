@@ -19,7 +19,7 @@ namespace VSUoW.Views
         {
             InitializeComponent();
 
-            MasterBehavior = MasterBehavior.Popover;
+            MasterBehavior = MasterBehavior.Split;
 
             MenuPages.Add((int)MenuItemType.News, (NavigationPage)Detail);
         }
@@ -31,7 +31,7 @@ namespace VSUoW.Views
                 switch (id)
                 {
                     case (int)MenuItemType.News:
-                        MenuPages.Add(id, new NavigationPage(new NewsPage()));
+                        MenuPages.Add(id, new NavigationPage(new OriginalNewsPage()));
                         break;
                     case (int)MenuItemType.Nav:
                         MenuPages.Add(id, new NavigationPage(new NavigatorPage()));
@@ -56,7 +56,7 @@ namespace VSUoW.Views
 
                 if (Device.RuntimePlatform == Device.Android)
                     await Task.Delay(100);
-
+                
                 IsPresented = false;
             }
         }

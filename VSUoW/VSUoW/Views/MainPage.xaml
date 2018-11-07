@@ -2,7 +2,8 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:VSUoW.Views"
-            x:Class="VSUoW.Views.MainPage">
+            x:Class="VSUoW.Views.MainPage"
+                  >
 
     <MasterDetailPage.Master>
         <views:MenuPage />
@@ -16,7 +17,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:NewsPage />
+                <views:OriginalNewsPage />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

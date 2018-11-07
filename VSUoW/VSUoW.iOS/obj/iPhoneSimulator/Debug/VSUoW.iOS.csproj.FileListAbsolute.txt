@@ -60,3 +60,7 @@ D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\obj\iPhoneSimulator\Debug\VSUoW.iOS.csproj.CopyComplete
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\obj\iPhoneSimulator\Debug\VSUoW.iOS.exe
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\obj\iPhoneSimulator\Debug\VSUoW.iOS.pdb
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.iOS.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.Forms.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\VSUoW.dll.mdb

@@ -5,36 +5,29 @@
              xmlns:tt="clr-namespace:TouchTracking"
              xmlns:local="clr-namespace:VSUoW"
              x:Class="VSUoW.Views.NavigatorPage"
-             Title="Всё получится!">
-    <Grid >
-        <Grid.RowDefinitions>
+    
+         Title="Навигатор ВГУВТ">
+
+
+    <Grid   >
+
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <!--<RowDefinition Height="*" />-->
+
         </Grid.RowDefinitions>
+        <Editor Text="Начальная ауд." Grid.Row="0" Grid.Column="0"/>
+        <Editor Text="Конечная ауд." Grid.Row="0" Grid.Column="1"/>
+        <Button Text="Построить маршрут" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#2196F3" TextColor="White"/>
+        <Grid  
+              Grid.Row="2"
+               Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#B6AFA1">
 
-        <!--<Picker Title="Touch Mode"
-                Grid.Row="0"
-                SelectedIndexChanged="OnTouchModePickerSelectedIndexChanged">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type local:TouchManipulationMode}">
-                    <x:Static Member="local:TouchManipulationMode.None" />
-                    <x:Static Member="local:TouchManipulationMode.PanOnly" />
-                    <x:Static Member="local:TouchManipulationMode.IsotropicScale" />
-                    <x:Static Member="local:TouchManipulationMode.AnisotropicScale" />
-                    <x:Static Member="local:TouchManipulationMode.ScaleRotate" />
-                    <x:Static Member="local:TouchManipulationMode.ScaleDualRotate" />
-                </x:Array>
-            </Picker.ItemsSource>
-            <Picker.SelectedIndex>
-                4
-            </Picker.SelectedIndex>
-        </Picker>-->
-
-        <Grid BackgroundColor="White"
-              Grid.Row="1">
-
-            <skia:SKCanvasView x:Name="canvasView"
+            <skia:SKCanvasView x:Name="canvasView" 
                                PaintSurface="OnCanvasViewPaintSurface" />
+
             <Grid.Effects>
                 <tt:TouchEffect Capture="True"
                                 TouchAction="OnTouchEffectAction" />

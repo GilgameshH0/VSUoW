@@ -2,19 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VSUoW.Views.MenuPage"
-             Title="Menu">
-    <StackLayout VerticalOptions="FillAndExpand">
+             
+             Title="Menu"
+            
+             xmlns:VSUoW="clr-namespace:VSUoW"
+             BackgroundColor="#2196F3"
+             >
+   
+    <StackLayout VerticalOptions="FillAndExpand"
+                 >
         <ListView x:Name="ListViewMenu"
-                    HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid Padding="10">
-                            <Label Text="{Binding Title}" FontSize="20"/>
-                        </Grid>
+                    HasUnevenRows="True"
+                 
+                  SeparatorColor="Black"
+                  
+                 >
+            <ListView.Triggers>
+                <EventTrigger Event="ItemSelected">
+                    <VSUoW:DeselectListViewItemAction></VSUoW:DeselectListViewItemAction>
+                </EventTrigger>
+            </ListView.Triggers>
+            <ListView.ItemTemplate 
+                >
+                <DataTemplate 
+                    >
+                    <ViewCell >
+                        <Grid  Padding="10" 
+                               
+                              >
+                            <Label Text="{Binding Title}" FontSize="20" TextColor="White" x:Name="Mylabel" >
+                                
+                            </Label>
+                        </Grid >
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>
+    

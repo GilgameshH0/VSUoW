@@ -6,8 +6,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
-  <application android:label="VSUoW.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="VSUoW" android:theme="@style/MainTheme" android:name="md5f5344e23155790b878a9582a577915b2.MainActivity">
+  <application android:label="VSUoW.Android" android:icon="@mipmap/vsuwt" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="ВГУВТ Помощник" android:theme="@style/MainTheme" android:name="md5f5344e23155790b878a9582a577915b2.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

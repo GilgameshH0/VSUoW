@@ -1395,15 +1395,6 @@ namespace VSUoW.Droid
 			// aapt resource value: 0x7F060004
 			public const int cardview_shadow_start_color = 2131099652;
 			
-			// aapt resource value: 0x7F050005
-			public const int colorAccent = 2131034117;
-			
-			// aapt resource value: 0x7F050003
-			public const int colorPrimary = 2131034115;
-			
-			// aapt resource value: 0x7F050004
-			public const int colorPrimaryDark = 2131034116;
-			
 			// aapt resource value: 0x7F060027
 			public const int design_bottom_navigation_shadow_color = 2131099687;
 			
@@ -1464,8 +1455,14 @@ namespace VSUoW.Droid
 			// aapt resource value: 0x7F06003A
 			public const int highlighted_text_material_light = 2131099706;
 			
-			// aapt resource value: 0x7F050002
-			public const int launcher_background = 2131034114;
+			// aapt resource value: 0x7F060002
+			public const int launcher_background = 2131099650;
+			
+			// aapt resource value: 0x7F060004
+			public const int ListViewHighlighted = 2131099652;
+			
+			// aapt resource value: 0x7F060003
+			public const int ListViewSelected = 2131099651;
 			
 			// aapt resource value: 0x7F06003B
 			public const int material_blue_grey_800 = 2131099707;
@@ -3889,6 +3886,9 @@ namespace VSUoW.Droid
 			// aapt resource value: 0x7F040004
 			public const int launcher_foreground = 2130968580;
 			
+			// aapt resource value: 0x7F040005
+			public const int vsuwt = 2130968581;
+			
 			static Mipmap()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -4116,8 +4116,8 @@ namespace VSUoW.Droid
 			// aapt resource value: 0x7F160006
 			public const int Animation_Design_BottomSheetDialog = 2132148230;
 			
-			// aapt resource value: 0x7F060004
-			public const int AppCompatDialogStyle = 2131099652;
+			// aapt resource value: 0x7F050005
+			public const int AppCompatDialogStyle = 2131034117;
 			
 			// aapt resource value: 0x7F160007
 			public const int Base_AlertDialog_AppCompat = 2132148231;
@@ -4620,11 +4620,14 @@ namespace VSUoW.Droid
 			// aapt resource value: 0x7F160004
 			public const int CardView_Light = 2132148228;
 			
-			// aapt resource value: 0x7F060002
-			public const int MainTheme = 2131099650;
+			// aapt resource value: 0x7F050003
+			public const int MainTheme = 2131034115;
 			
-			// aapt resource value: 0x7F060003
-			public const int MainTheme_Base = 2131099651;
+			// aapt resource value: 0x7F050004
+			public const int MainTheme_Base = 2131034116;
+			
+			// aapt resource value: 0x7F050002
+			public const int MyTheme = 2131034114;
 			
 			// aapt resource value: 0x7F1600AA
 			public const int Platform_AppCompat = 2132148394;

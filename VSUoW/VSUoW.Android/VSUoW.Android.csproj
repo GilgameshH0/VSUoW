@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack">
+      <Version>1.8.9</Version>
+    </PackageReference>
     <PackageReference Include="SkiaSharp">
       <Version>1.60.3</Version>
     </PackageReference>
@@ -162,6 +165,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\bmpmap.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\vsuwt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\vsuwt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\vsuwt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\vsuwt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\vsuwt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

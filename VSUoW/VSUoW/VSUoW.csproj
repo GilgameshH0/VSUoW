@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.9" />
     <PackageReference Include="SkiaSharp" Version="1.60.3" />
     <PackageReference Include="SkiaSharp.Views" Version="1.60.3" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.3" />
@@ -40,14 +41,22 @@
     <EmbeddedResource Update="Views\AbUnPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\EnterNav1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\NavigatorPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\NewsPage.xaml">
+    <EmbeddedResource Update="Views\OriginalNewsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ScannerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

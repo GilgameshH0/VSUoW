@@ -9,7 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SkiaSharp;
 using SkiaSharp.Views.Forms;
-using BitmapExtensions;
+
 using TouchTracking;
 using System.IO;
 
@@ -20,7 +20,7 @@ namespace VSUoW.Views
     {
         TouchManipulationBitmap bitmap;
         List<long> touchIds = new List<long>();
-        MatrixDisplay matrixDisplay = new MatrixDisplay();
+        
         public NavigatorPage()
         {
             InitializeComponent();
@@ -43,6 +43,7 @@ namespace VSUoW.Views
 
                         using (SKPath path = new SKPath())
                         {
+
                             path.MoveTo(320, 390);                          
                             path.LineTo(320,485);
                             // path.MoveTo(320, 390);
@@ -117,12 +118,7 @@ namespace VSUoW.Views
             bitmap.Paint(canvas);
            
 
-            // Display the matrix in the lower-right corner
-            //SKSize matrixSize = matrixDisplay.Measure(bitmap.Matrix);
-
-            //matrixDisplay.Paint(canvas, bitmap.Matrix,
-            //    new SKPoint(info.Width - matrixSize.Width,
-            //                info.Height - matrixSize.Height));
+           
         }
     }
 }

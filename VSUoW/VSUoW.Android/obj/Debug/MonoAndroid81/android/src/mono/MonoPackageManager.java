@@ -109,6 +109,7 @@ class MonoPackageManager_Resources {
 		"VSUoW.Android.dll",
 		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
+		"HtmlAgilityPack.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",

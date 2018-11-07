@@ -4,10 +4,10 @@
              x:Class="VSUoW.App">
     <Application.Resources>
         <ResourceDictionary>
-            <!--Global Styles-->
+            
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarBackgroundColor" Value="#2196F3" />
                 <Setter Property="BarTextColor" Value="White" />
             </Style>
         </ResourceDictionary>
