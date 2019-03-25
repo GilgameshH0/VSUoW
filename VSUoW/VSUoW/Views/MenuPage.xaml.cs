@@ -15,16 +15,22 @@ namespace VSUoW.Views
        
         public MenuPage()
         {
-            InitializeComponent();
-            
+            InitializeComponent();           
            
             menuItems = new List<HomeMenuItem>
             {
+                new HomeMenuItem {Id = MenuItemType.Start, Title="Начальная страница",  },
                 new HomeMenuItem {Id = MenuItemType.News, Title="Новости",  },
+                new HomeMenuItem {Id = MenuItemType.Calendar, Title="Календарь событий",  },
+                new HomeMenuItem {Id = MenuItemType.shedule, Title="Расписание",  },
+
+                new HomeMenuItem {Id = MenuItemType.biblio, Title="Библиотека",  },
+
                 new HomeMenuItem {Id = MenuItemType.Nav, Title="Навигатор" },
-                new HomeMenuItem {Id = MenuItemType.AbUn, Title="Об Университете" },
+               
                 new HomeMenuItem {Id =MenuItemType.Scanner, Title="Сканнер" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="О приложении" }
+
+                
             };
 
             
@@ -33,7 +39,7 @@ namespace VSUoW.Views
             ListViewMenu.SelectedItem = menuItems[0];
 
            
-
+            
             ListViewMenu.ItemSelected += async (sender, e) =>
             {
                 if (e.SelectedItem == null)
@@ -43,7 +49,7 @@ namespace VSUoW.Views
                 var id = (int)((HomeMenuItem)e.SelectedItem).Id;
                 await RootPage.NavigateFromMenu(id);
    
-
+                
             };
         }
        

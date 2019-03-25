@@ -2,63 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VSUoW.Views.OriginalNewsPage"
-             Title="Новости ВГУВТа">
-    <AbsoluteLayout>
-        <!--<Grid Padding="0,0,0,0" AnchorX="0" AnchorY="0">
+             Title="Новости">
+    
+    
+    <StackLayout >
+        <StackLayout x:Name="Iner" IsVisible="True">
+            <Label Text="Проверьте интернет соединение"/>
+            <Button Clicked="Inb" Text="Обновить"/>
+        </StackLayout>
+        <StackLayout x:Name="Ins" IsVisible="True">
+            <Label Text="Загрузка..."/>
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" IsVisible="False" x:Name="Intr">
 
-            <Grid.RowDefinitions >
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+            <ListView x:Name="List1"
+              HasUnevenRows="True" VerticalOptions="FillAndExpand"
+              ItemsSource="{Binding NewsListOne1}"
+                 ItemTapped ="Selected1"
+                 
+              >
+                <ListView.ItemTemplate >
+                    <DataTemplate >
+                        <ViewCell >
+                            <ViewCell.View >
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"></ColumnDefinition>
-                <ColumnDefinition ></ColumnDefinition>
+                                <StackLayout x:Name="st"  Orientation="Horizontal" Padding="5,5,5,5" BackgroundColor="{Binding bg}" >
+                                    <Image Source="{Binding uri}" WidthRequest="80"/>
+                                    <StackLayout >
+                                        <Label Text="{Binding text1}" FontSize="18" />
+                                        <Label Text="{Binding text2}" />
+                                    </StackLayout>
+                                </StackLayout>
 
-            </Grid.ColumnDefinitions>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-
-
-
-
-            <StackLayout Grid.Column="0" Grid.Row="0" >
-                <Image x:Name="uri1"/>
-
-            </StackLayout>
-            <StackLayout Grid.Column="0" Grid.Row="1"  >
-                <Image x:Name="uri2"   />
-            </StackLayout>
-
-            <StackLayout Grid.Column="1" Grid.Row="0" >
-
-                <Label x:Name="label1" FontAttributes="Bold" FontSize="14"/>
-                <Label x:Name="label2" FontSize="13"/>
-            </StackLayout>
-            <StackLayout Grid.Column="1" Grid.Row="1" >
-                <Label x:Name="label3"  FontAttributes="Bold" FontSize="14"/>
-                <Label x:Name="label4" FontSize="13"/>
-            </StackLayout>
-
-            <StackLayout Grid.Column="0" Grid.Row="2" >
-                <Image x:Name="uri3"    />
-            </StackLayout>
-            <StackLayout Grid.Column="0" Grid.Row="3" >
-                <Image x:Name="uri4"  />
-            </StackLayout>
-
-            <StackLayout Grid.Column="1" Grid.Row="2" >
-                <Label x:Name="label5" FontAttributes="Bold" />
-                <Label x:Name="label6"  />
-            </StackLayout>
-            <StackLayout Grid.Column="1" Grid.Row="3" >
-                <Label x:Name="label7" FontAttributes="Bold" />
-                <Label x:Name="label8" />
-            </StackLayout>
-
-            
-
-            
-        </Grid>-->
-    </AbsoluteLayout>
-
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

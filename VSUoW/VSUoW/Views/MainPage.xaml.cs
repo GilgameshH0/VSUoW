@@ -21,7 +21,7 @@ namespace VSUoW.Views
 
             MasterBehavior = MasterBehavior.Split;
 
-            MenuPages.Add((int)MenuItemType.News, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Start, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -30,21 +30,34 @@ namespace VSUoW.Views
             {
                 switch (id)
                 {
+                    case (int)MenuItemType.Start:
+                        MenuPages.Add(id, new NavigationPage(new StartPage()));
+                        break;
                     case (int)MenuItemType.News:
                         MenuPages.Add(id, new NavigationPage(new OriginalNewsPage()));
                         break;
+
+                    case (int)MenuItemType.Calendar:
+                        MenuPages.Add(id, new NavigationPage(new Calendar()));
+                        break;
+
                     case (int)MenuItemType.Nav:
-                        MenuPages.Add(id, new NavigationPage(new NavigatorPage()));
+                        MenuPages.Add(id, new NavigationPage(new EnterNav1()));
                         break;
-                    case (int)MenuItemType.AbUn:
-                        MenuPages.Add(id, new NavigationPage(new AbUnPage()));
+                    
+                    case (int)MenuItemType.shedule:
+                        MenuPages.Add(id, new NavigationPage(new schedule()));
                         break;
+
+                    case (int)MenuItemType.biblio:
+                        MenuPages.Add(id, new NavigationPage(new Biblio()));
+                        break;
+
                     case (int)MenuItemType.Scanner:
                         MenuPages.Add(id, new NavigationPage(new ScannerPage()));
                         break;
-                    case (int)MenuItemType.About:
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
-                        break;
+
+                    
                 }
             }
 

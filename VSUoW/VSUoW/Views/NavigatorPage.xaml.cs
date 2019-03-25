@@ -20,11 +20,13 @@ namespace VSUoW.Views
     {
         TouchManipulationBitmap bitmap;
         List<long> touchIds = new List<long>();
-        
+        string resourceID = "VSUoW.bmpmap.bmp";
         public NavigatorPage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
-            string resourceID = "VSUoW.bmpmap.bmp";
+            
+            
             Assembly assembly = GetType().GetTypeInfo().Assembly;
             using (Stream stream = assembly.GetManifestResourceStream(resourceID))
             {
@@ -32,26 +34,26 @@ namespace VSUoW.Views
                 SKBitmap bitmap = SKBitmap.Decode(stream);
                 this.bitmap = new TouchManipulationBitmap(bitmap);
                 this.bitmap.TouchManager.Mode = TouchManipulationMode.ScaleRotate;
-                using (SKCanvas canvas = new SKCanvas(bitmap))
-                {
-                    using (SKPaint fairway = new SKPaint())
-                    {
-                        fairway.Style = SKPaintStyle.Stroke;
-                        fairway.Color = SKColors.Red;
-                        fairway.StrokeWidth = 7;
+                //using (SKCanvas canvas = new SKCanvas(bitmap))
+                //{
+                //    using (SKPaint fairway = new SKPaint())
+                //    {
+                //        fairway.Style = SKPaintStyle.Stroke;
+                //        fairway.Color = SKColors.Red;
+                //        fairway.StrokeWidth = 7;
                         
 
-                        using (SKPath path = new SKPath())
-                        {
+                //        using (SKPath path = new SKPath())
+                //        {
 
-                            path.MoveTo(320, 390);                          
-                            path.LineTo(320,485);
-                            // path.MoveTo(320, 390);
+                //            path.MoveTo(320, 390);                          
+                //            path.LineTo(320,485);
+                //            // path.MoveTo(320, 390);
                             
-                            canvas.DrawPath(path, fairway);
-                        }
-                    }
-                }
+                //            canvas.DrawPath(path, fairway);
+                //        }
+                //    }
+                //}
             }
             
         }
@@ -119,6 +121,16 @@ namespace VSUoW.Views
            
 
            
+        }
+
+        private void Floor_Clicked(object sender, EventArgs e)
+        {
+            //if (fledit.Text == "1")
+            //{
+            //    resourceID = "VSUoW.test1.bmp";
+            //}
+
+            
         }
     }
 }

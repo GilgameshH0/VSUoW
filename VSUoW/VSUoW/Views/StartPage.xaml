@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VSUoW.Views.StartPage"
+             Title="Добро пожаловать!">
+    <ContentPage.Content
+        >
+        <StackLayout BackgroundColor="White">
+            <Image x:Name="InfoImg" Source="vsuwt.jpg" VerticalOptions="Center" HeightRequest="340"/>
+            <Label HorizontalTextAlignment = "Center" FontSize="19" Text="Добро пожаловать!"       
+                   FontAttributes="Bold"
+                 />
+            <Label HorizontalTextAlignment = "Center" FontSize="19" Text=" Вас приветствует Мой ВГУВТ!"         
+                   FontAttributes="Bold"
+                 />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

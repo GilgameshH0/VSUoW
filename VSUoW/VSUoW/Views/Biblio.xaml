@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VSUoW.Views.Biblio"
+             Title="Библиотека">
+    <ContentPage.Content>
+        <StackLayout Padding="16,40,16,40" BackgroundColor="White">
+            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="19" Text="Добро пожаловать в Электронную библиотеку! Введите ваш Логин и пароль для входа."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry Placeholder="Введите логин" />
+            
+            <Entry Placeholder="Введите пароль" />
+            
+            <Button Text="Войти" BackgroundColor="#2196F3" TextColor="White"></Button>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

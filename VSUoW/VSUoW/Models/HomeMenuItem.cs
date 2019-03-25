@@ -7,11 +7,14 @@ namespace VSUoW.Models
 {
     public enum MenuItemType
     {
-        News,
-        AbUn,
+        Start,
+        News,      
+        shedule,
+        biblio,
         Nav,
         Scanner,
-        About
+        Calendar
+        
     }
     public class HomeMenuItem
     {

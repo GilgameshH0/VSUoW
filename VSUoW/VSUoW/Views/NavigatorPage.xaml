@@ -3,13 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              xmlns:tt="clr-namespace:TouchTracking"
-             xmlns:local="clr-namespace:VSUoW"
+             xmlns:local="clr-namespace:VSUoW.Views"
              x:Class="VSUoW.Views.NavigatorPage"
-    
-         Title="Навигатор ВГУВТ">
+        Title="Навигатор">
 
 
-    <Grid   >
+    <Grid  BackgroundColor="White" >
 
         <Grid.RowDefinitions >
             <RowDefinition Height="Auto" />
@@ -18,12 +17,46 @@
             <!--<RowDefinition Height="*" />-->
 
         </Grid.RowDefinitions>
-        <Editor Text="Начальная ауд." Grid.Row="0" Grid.Column="0"/>
-        <Editor Text="Конечная ауд." Grid.Row="0" Grid.Column="1"/>
-        <Button Text="Построить маршрут" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#2196F3" TextColor="White"/>
+        
+        <!--<Button x:Name="floor" Clicked="Floor_Clicked" Text="Выбор этажа" Grid.Row="0" Grid.Column="0"  BackgroundColor="#2196F3" TextColor="White"/>
+        <Editor x:Name="fledit" Text="Этаж" Grid.Row="0" Grid.Column="1"/>-->
+        <Picker x:Name="pickhome1" Title="Выбор Здания" Grid.Row="0" Grid.Column="0">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Новое здание</x:String>
+                    <x:String>Старое здание</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Picker x:Name="pickfloor1" Title="Выбор этажа" Grid.Row="2" Grid.Column="0" >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Первый этаж</x:String>
+                    <x:String>Второй этаж</x:String>
+                    <x:String>Третий этаж</x:String>
+                    <x:String>Четвертый этаж</x:String>
+                    <x:String>Пятый этаж</x:String>
+                    <x:String>Шестой этаж</x:String>
+                    <x:String>Седьмой этаж</x:String>
+                    <x:String>Восьмой этаж</x:String>
+                    <x:String>Девятый этаж</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Entry Placeholder="Начальная аудитория"  Grid.Row="0" Grid.Column="1" />
+        <Entry Placeholder="Конечная аудитория" Grid.Row="2" Grid.Column="1" />
+        <!--<Editor  Placeholder="Enter text here"  Grid.Row="2" Grid.Column="0"/>
+        <Editor Text="Конечная ауд." Grid.Row="2" Grid.Column="1"/>-->
+        <StackLayout Grid.Row="3" Grid.Column="0" Padding="2,5,2,5" BackgroundColor="White">
+            <Button x:Name="igfa" Text="Показать этаж"    BackgroundColor="#2196F3" TextColor="White"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Grid.Column="1" Padding="2,5,2,5" BackgroundColor="White">
+            <Button x:Name="CreatePath" Text="Построить маршрут"   BackgroundColor="#2196F3" TextColor="White"/>
+            </StackLayout>
         <Grid  
-              Grid.Row="2"
-               Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#B6AFA1">
+              Grid.Row="4"
+               Grid.Column="0" Grid.RowSpan="10" Grid.ColumnSpan="2" BackgroundColor="White">
 
             <skia:SKCanvasView x:Name="canvasView" 
                                PaintSurface="OnCanvasViewPaintSurface" />

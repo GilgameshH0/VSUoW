@@ -17,7 +17,7 @@
                   SeparatorColor="Black"
                   
                  >
-            <ListView.Triggers>
+            <ListView.Triggers >
                 <EventTrigger Event="ItemSelected">
                     <VSUoW:DeselectListViewItemAction></VSUoW:DeselectListViewItemAction>
                 </EventTrigger>
@@ -30,7 +30,7 @@
                         <Grid  Padding="10" 
                                
                               >
-                            <Label Text="{Binding Title}" FontSize="20" TextColor="White" x:Name="Mylabel" >
+                            <Label Text="{Binding Title}" FontSize="30" TextColor="White" x:Name="Mylabel" VerticalTextAlignment="Center">
                                 
                             </Label>
                         </Grid >
@@ -38,6 +38,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ProgressBar />
     </StackLayout>
+    
+
 </ContentPage>
     

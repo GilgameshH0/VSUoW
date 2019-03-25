@@ -17,9 +17,10 @@ namespace VSUoW.Views
 			InitializeComponent ();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-          //  Navigation.PushModalAsync(ScannerPage);
+            //форватер
+          await  Navigation.PushAsync(new NavigationPage(new NavigatorPage()));
         }
     }
 }

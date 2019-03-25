@@ -64,3 +64,10 @@ D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.iOS.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.Forms.dll
 D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\VSUoW.dll.mdb
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\HtmlAgilityPack.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\HtmlAgilityPack.pdb
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
+D:\ChanceToLive\VSUoW\VSUoW\VSUoW.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.pdb

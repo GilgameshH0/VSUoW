@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,10 +13,14 @@ namespace VSUoW.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ScannerPage : ContentPage
 	{
-		public ScannerPage ()
+
+      
+        public ScannerPage ()
 		{
 			InitializeComponent ();
-		}
+
+          
+        }
         private async void OpenScanWindow(object sender, EventArgs e)
         {
             //  NavigationPage.SetHasNavigationBar(this, true);

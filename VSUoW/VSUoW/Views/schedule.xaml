@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:VSUoW="clr-namespace:VSUoW"
+             x:Class="VSUoW.Views.schedule"
+             Title="Расписание">
+    
+        
+    <ContentPage.Content >
+        <StackLayout Padding="16,40,16,40" BackgroundColor="White">
+            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="19" Text="Добро пожаловать в расписание университета!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Picker x:Name="Fakultet" Title="Выберите Факультет" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Электромеханический факультет</x:String>
+                        <x:String>Факультет судовождения</x:String>
+                        <x:String>Факультет кораблестроения, гидротехники и защиты окружающей среды</x:String>
+                        <x:String>Институт экономики, управления и права</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Picker x:Name="kurs" Title="Выберите Курс" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Первый курс</x:String>
+                        <x:String>Второй курс</x:String>
+                        <x:String>Третий курс</x:String>
+                        <x:String>Четвертый курс</x:String>
+                        <x:String>Пятый курс</x:String>
+                        <x:String>Шестой курс</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Picker x:Name="Specialities12" Title="Выберите Специальность" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Радисты</x:String>
+                        <x:String>Электрики</x:String>
+                        <x:String>Экономисты</x:String>
+                        <x:String>ТТП</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button Text="Показать расписание" BackgroundColor="#2196F3" TextColor="White"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
